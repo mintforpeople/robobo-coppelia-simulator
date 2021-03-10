@@ -8,31 +8,32 @@ Repository of Robobo robot simulation in the CoppeliaSim environment.
  - Windows, Linux, macOS.
  - CoppeliaSim.
  - Robobo.py library.
- - (Optional) Anaconda3.
 
 ## Installation
 
-This model uses the *robobo.py* library. If you dont have it yet, *install and start using* documentation are avaliable on:
-https://github.com/mintforpeople/robobo.py
+To install CoppeliaSim in your computer, please follow the instructions at:
 
-Clone or download this repository and put the *lib* files into your *robobo.py-master* folder.
-**Python 3, websockets** and **websocket-client** needs to be installed.
+https://www.coppeliarobotics.com/downloads
 
-Althoug having Anaconda is not a requirement in order to install and use this model, it is highly recommended doing so due to its simplicity.
+To install the _robobo.py_ library, follow the steps explained at:
 
-With Anaconda you can create a virtual environment with all the dependencies by running:
+https://github.com/mintforpeople/robobo-programming/wiki/python-doc
 
-```bash
-conda create -n robobo python=3.6 websockets websocket-client
-```
+Finally, download this repository and:
+
+* Copy all the files in the *lib* folder into your *robobo.py-master* folder
+* Copy the _models_ and _worlds_ folders to your computer, so you can open them from CoppeliaSim.
+* Copy the files in the _scripts_ folder to your computer so you can try the included examples
 
 ## Basic usage
 
-Add the *robobo.ttm* CoppeliaSim model to the desired scene and start the simulation.
+Add the *robobo.ttm* CoppeliaSim model to the desired scene and start the simulation, as explained in:
 
-Open any python IDE and run RoboboSimulationServer.py
+https://www.coppeliarobotics.com/helpFiles/index.html
 
-While Robobo Simulation Server is running, run your own scripts on another terminal. The connection and usage of the simulation model is the same as the real robot:
+Open any python IDE and run _RoboboSimulationServer.py_
+
+While Robobo Simulation Server is running, run your own scripts on another terminal. The connection and usage of the simulation model is the same as the real robot, but using the localhost IP:
 
 ```bash
 from Robobo import Robobo
@@ -40,27 +41,12 @@ robobo = Robobo('127.0.0.1')
 robobo.connect()
 ```
 
-To interact with the model, you can use the following functions.
+The following methods of the _robobo.py_ library are not available yet:
+* Camera methods (see next section in order to have an option to use your own camera methods easily) 
+* Audio methods
 
-List of robobo.py functions available on simulation:
- - wait
- - moveWheels
- - moveWheelsByTime
- - moveWheelsByDegrees
- - stopMotors
- - movePanTo
- - moveTiltTo
- - setLedColorTo
- - resetWheelEncoders
- - setEmotionTo
- - readAllIRSensor
- - readOrientationSensor
- - readAccelerationSensor
- - readPanPosition
- - readTiltPosition
- - readWheelPosition
- - readWheelSpeed
- - changeStatusFrequency
+## Camera streaming
+
 
 
 ## Multi-robot environment
