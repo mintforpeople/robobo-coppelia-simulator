@@ -5,9 +5,9 @@ Repository of Robobo robot simulation in the CoppeliaSim environment.
 
 ## Requirements
 
- - Windows, Linux, macOS.
- - CoppeliaSim.
- - Robobo.py library.
+- Windows, Mac or Linux computer (GPU recommended)
+- CoppeliaSim
+- Robobo.py library
 
 ## Installation
 
@@ -21,9 +21,9 @@ https://github.com/mintforpeople/robobo-programming/wiki/python-doc
 
 Finally, download this repository and:
 
-* Copy all the files in the *lib* folder into your *robobo.py-master* folder
+* Copy all the files of the *lib* folder into your *robobo.py-master* or *robobo.py* folder
 * Copy the _models_ and _worlds_ folders to your computer, so you can open them from CoppeliaSim.
-* Copy the files in the _scripts_ folder to your computer so you can try the included examples
+* Copy the example.py file in your computer so you can try it.
 
 ## Basic usage
 
@@ -31,7 +31,7 @@ Add the *robobo.ttm* CoppeliaSim model to the desired scene and start the simula
 
 https://www.coppeliarobotics.com/helpFiles/index.html
 
-Open any python IDE and run _RoboboSimulationServer.py_
+Open any python IDE and run the _RoboboSimulationServer.py_ script.
 
 While Robobo Simulation Server is running, run your own scripts on another terminal. The connection and usage of the simulation model is the same as the real robot, but using the localhost IP:
 
@@ -42,22 +42,13 @@ robobo.connect()
 ```
 
 The following methods of the _robobo.py_ library are not available yet:
-* Camera methods (see next section in order to have an option to use your own camera methods easily) 
+* Camera methods
 * Audio methods
 
 ## Camera streaming
 
-
+Coming soon.
 
 ## Multi-robot environment
 
 Coming soon.
-
-## Structure
-
-This package contains the following folders and files:
- - lib: remote API files.
- - example.py: connect and interact example script.
- - README.md: this file.
- - robobo.ttm: Robobo CoppeliaSim model.
- - robobo-pusher.ttm: Robobo with pusher tool model.

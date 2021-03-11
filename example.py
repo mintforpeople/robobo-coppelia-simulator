@@ -10,12 +10,12 @@ from utils.Color import Color
 
 
 def robobo():
-    # Introducimos los valores de las constantes
+    # constant values
     closeIRValue = 100
     mediumIRValue = 20
     farIRValue = 5
     speed = 15
-    # Comienza el programa
+    # Movement starts
     rob.movePanTo(90, 20)
     rob.wait(1)
     print('Pan 90: ', rob.readPanPosition())
@@ -57,8 +57,8 @@ def robobo():
 
 
 if __name__ == '__main__':
-    rob = Robobo('127.0.0.1')  # 127.0.0.1 (sim)
-    rob.connect()  # 10.113.36.167 (real)
+    rob = Robobo('127.0.0.1')  # localhost
+    rob.connect() 
     rob.changeStatusFrequency(StatusFrequency.Max)
     start_time = time()
     robobo()
