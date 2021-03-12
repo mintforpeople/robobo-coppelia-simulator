@@ -3,6 +3,14 @@
 
 Repository of Robobo robot simulation in the CoppeliaSim environment.
 
+
+## Repository contents
+
+- lib: it includes all the python libraries to run Robobo in CoppeliaSim using robobo.py
+- models: it includes the Robobo models for CoppeliaSim. *robobo_pusher* corresponds to the model with pusher
+- worlds: it includes different simulation environments to be used with Robobo
+- example.py: a simple example that makes Robobo move in a closed environment avoiding walls
+
 ## Requirements
 
 - Windows, Mac or Linux computer (GPU recommended)
