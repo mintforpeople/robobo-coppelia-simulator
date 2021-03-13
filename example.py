@@ -1,3 +1,6 @@
+#This script makes Robobo to move Pan and Tilt motors
+#and then moves the robot avoiding obstacles using the IR sensors
+
 from Robobo import Robobo
 from utils.StatusFrequency import StatusFrequency
 from time import time
